@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUd-Lv-JFc">
+                                <rect key="frame" x="117.5" y="120" width="85" height="85"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DUd-Lv-JFc" secondAttribute="height" multiplier="1:1" id="UCh-Wt-qq3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tp-1r-dwf">
+                                <rect key="frame" x="117.5" y="310.5" width="85" height="85"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8tp-1r-dwf" secondAttribute="height" multiplier="1:1" id="K9s-7F-8XO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6W-SW-XUT">
+                                <rect key="frame" x="117.5" y="215" width="85" height="85.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G6W-SW-XUT" secondAttribute="height" multiplier="1:1" id="IJB-wo-Yha"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myG-iJ-hGk">
+                                <rect key="frame" x="104" y="495.5" width="112" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <connections>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="q3E-JV-L9X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="myG-iJ-hGk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8os-zc-XdP"/>
+                            <constraint firstItem="8tp-1r-dwf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="BGM-D9-KQK"/>
+                            <constraint firstItem="G6W-SW-XUT" firstAttribute="top" secondItem="DUd-Lv-JFc" secondAttribute="bottom" constant="10" id="HBR-w8-RAl"/>
+                            <constraint firstItem="DUd-Lv-JFc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="K45-I4-YKq"/>
+                            <constraint firstItem="G6W-SW-XUT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="S9l-hO-mwv"/>
+                            <constraint firstItem="8tp-1r-dwf" firstAttribute="top" secondItem="G6W-SW-XUT" secondAttribute="bottom" constant="10" id="Xr8-9x-X0e"/>
+                            <constraint firstItem="myG-iJ-hGk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="ZvG-ix-OqR"/>
+                            <constraint firstItem="DUd-Lv-JFc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="aDm-gJ-pe7"/>
+                            <constraint firstItem="8tp-1r-dwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bs2-5J-Tpa"/>
+                            <constraint firstItem="G6W-SW-XUT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cWK-7s-L6U"/>
+                            <constraint firstItem="myG-iJ-hGk" firstAttribute="top" secondItem="8tp-1r-dwf" secondAttribute="bottom" constant="100" id="k7S-Ep-tHJ"/>
+                            <constraint firstItem="DUd-Lv-JFc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oQp-S6-EJl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="myG-iJ-hGk" id="9SE-oF-dlr"/>
+                        <outlet property="lightGreen" destination="8tp-1r-dwf" id="8hB-jN-rom"/>
+                        <outlet property="lightRed" destination="DUd-Lv-JFc" id="op9-JG-fI1"/>
+                        <outlet property="lightYellow" destination="G6W-SW-XUT" id="JdS-kb-7lq"/>
+                        <outlet property="viewSafeArea" destination="8bC-Xf-vdC" id="FFs-QH-CHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
